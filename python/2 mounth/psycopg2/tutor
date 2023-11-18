@@ -1,0 +1,12 @@
+from multiprocessing import connection
+import psycopg2
+connect = psycopg2.connect(
+    host = '127.0.0.1',
+    database = 'ww',
+    user = 'postgres',
+    password = '8659', 
+    port = '5432'
+    
+)
+print('хуйня работает')
+cursor = connect.cursor()

@@ -1,0 +1,12 @@
+.flexer{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.card {
+     
+}
+.ss{
+    width: 500px;
+     height: 300px;
+}

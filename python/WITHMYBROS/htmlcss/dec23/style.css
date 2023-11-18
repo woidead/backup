@@ -1,0 +1,31 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+
+.firnav {
+  color: white;
+}
+
+.secnav ul {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.secnav li {
+  list-style: none;
+}
+.secnav a {
+  text-decoration: none;
+  color: white;
+}
+
+.fullbox {
+  width: 100%;
+  height: 88vh;
+  background-image: url(/dec23/img/photo1671782783.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */

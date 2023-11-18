@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    a {
+        text-decoration: none;
+
+    }
+}
+
+.Container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.NavBar {
+    width: 1200px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('/dec21/9a3752e2-8d35-4de5-aea7-fc863461def9.jfif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+
+    li {
+        list-style: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: wheat;
+    }
+
+    a {
+        text-decoration: none;
+        color: wheat;
+    }
+
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.container {
+    margin: 20px auto;
+    width: 1100px;
+    display: flex;
+    gap: 40px;
+}
+
+.pfp {
+    width: 200;
+    border-radius: 50%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.insta {
+    // width: 200px;
+    // height: 40px;
+    // border: none;
+    // border-radius: 2px;
+    background-color: red;
+    color: white;
+}
+
+.face {
+    // width: 200px;
+    // height: 40px;
+    // border: none;
+    // border-radius: 2px;
+    background: linear-gradient(90deg, red, blue, rgb(3, 144, 144));
+    color: white;
+}
+
+.linkedin {
+    // width: 200px;
+    // height: 40px;
+    // border: none;
+    // border-radius: 2px;
+    background-color: rgb(3, 144, 144);
+    color: white;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+
+    a {
+        color: white;
+
+    }
+
+    button {
+        width: 200px;
+        height: 40px;
+        border: none;
+        border-radius: 2px;
+        transition: 0.5s;
+    }
+
+    button:hover {
+        transform: scale(1.2);
+    }
+
+}

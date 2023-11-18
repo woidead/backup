@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title%} {% endblock %}</title>
+  <link rel="shortcut icon" href="{% static 'images/pngegg.png'%}" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+...</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-lg-3" href="{%url 'main'%}"><img height="40px" src="{% static 'images/pngegg.png'%}"
+          alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{%url 'main'%}">NIKE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{%url 'main'%}">basket</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{%url 'main'%}">about us</a>
+          </li>
+        </ul>
+        <form action="{%url 'main'%}" method="post" class="me-3 d-flex" role="search">
+          {% csrf_token %}
+          <input name='search' class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+          <button type="submit"><i class="fa-sharp fa-2x fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <a href="{%url 'main'%}"><i class="me-5 fa-solid fa-2x fa-basket-shopping"></i></a>
+
+      </div>
+    </div>
+
+    {% if user.is_authenticated %}
+
+    <li>
+      <p class="me-3 aaaaa">{{user}}</p>
+    </li>
+    <div class=" me-lg-3 btn-group" role="group" aria-label="Basic outlined example">
+
+      <button type="button" class="btn btn-outline-primary"><a href="{%url 'main'%}"> logout</a></button>
+
+    </div>
+    {% else %}
+    <div class=" me-lg-3 btn-group" role="group" aria-label="Basic outlined example">
+      <button type="button" class="btn btn-outline-primary">Новыйдроп</button>
+      <button type="button" class="btn btn-outline-primary"><a href="{%url 'main'%}">Войти</a> </button>
+      <button type="button" class="btn btn-outline-primary"><a href="{%url 'main'%}">Зарегатся</a></button>
+
+    </div>
+    {% endif %}
+
+  </nav>
+  {% block content %}
+
+  {% endblock %}
+
+</body>
+
+</html>

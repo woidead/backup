@@ -1,0 +1,64 @@
+.all{
+    width: 99%;
+    height: 99vh;
+    border: 1px solid white;
+    position: relative;}
+/* .circle{
+    width: 20vh;
+    height: 20vh;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    
+    
+} */
+.circle2{ position: absolute;
+    width: 35vh;
+    height: 35vh;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50%;
+    right: 50%;
+    bottom: 60%;
+    translate: 50% 50%;
+
+}
+.circle3{
+    position: absolute;
+    width: 11vh;
+    height: 11vh;
+    border: 10px solid black;
+    background-color: white;
+    border-radius: 50%;
+    right: 50%;
+    bottom: 65%;
+    translate: 50% 50%;
+    z-index: 1;
+
+}
+.circle4{
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    border: 5px solid white;
+    background-color: white;
+    border-radius: 0vh 12vh 0 0;
+    right: 47.5%;
+    bottom: 57%;
+    translate: 50% 50%;
+}
+.circle5{
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    border: 5px solid white;
+    background-color: white;
+    border-radius: 12vh 0vh 0 0;
+    right: 52.5%;
+    bottom: 57%;
+    translate: 50% 50%;
+}
+.img{
+    width: 10%;
+}

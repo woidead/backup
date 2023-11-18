@@ -1,0 +1,26 @@
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contact{
+    
+    width: 200px;
+    padding: 100px;
+    border-radius: 2%;
+    background-color: rgb(63,128,201) ;
+    text-align: center;
+    
+}
+.ee{
+    margin: 10px 0;
+}
+button{
+    border: 2px solid #f3dbdf ; /* Параметры рамки */
+    background: rgb(63,128,201); /* Цвет фона */
+    font-size: 14px; /* Размер текста */
+    padding: 5px 20px; /* Поля вокруг текста */
+    border-radius: 2%;
+   }

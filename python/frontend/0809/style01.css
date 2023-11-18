@@ -1,0 +1,263 @@
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    border:1px solid red;
+    position: relative;
+}
+.so{
+    padding: 30px 0px;
+    
+}
+.ss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.slogan{
+    padding: 30px 0px;  
+}
+.headd{
+    width: 100%;
+    height: 8vh;
+    border: 1px solid black;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-top: 20px ;
+    
+}
+li{
+    font-size: 15px;
+    list-style: none;
+    color: white;
+    
+    
+}
+.wwww{
+    width: 15%;
+    
+}
+a {
+    text-decoration:none;
+    color: white;
+  }
+  
+a:hover{
+    
+    height: 12vh;
+    background-color: #fff;
+    color: #000;
+    transition: .5s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+
+}
+
+.img{
+    background-image: url('.//img-Some/rawpixel-196464-unsplash.png');
+    width: 32%;
+    height: 40vh;
+    border-radius: 5%;
+}
+.img2{
+    
+    width: 32%;
+    height: 40vh;
+    
+    display: flex;
+}
+.i{width: 65%;
+    height: 100%;
+    background-color: green;
+    border-radius: 5% 0 0 5%;
+}
+.o{
+    width: 35%;
+    height: 100%;
+    background-color: red;
+    border-radius: 0 5% 5% 0;
+}
+.img3{
+    background-image: url('.//img-Some/rawpixel-196464-unsplash.png');
+    width: 32%;
+    height: 40vh;
+    border-radius: 5%;
+}
+.d{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 30px; 
+    
+}
+.img p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.img3 p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+.ee{
+    text-align: center;
+    font-size: 20px;
+    color: green;
+    margin-bottom: 20px;
+}
+/* .gl{
+    display: flex;
+} */
+.elo{
+    width: 25%;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: white;
+    /* box-shadow: 2px; */
+    
+    
+}
+.u{
+    text-align: center;
+
+}
+.img5{
+    
+    width: 80%;
+    height: 15vh;
+    background-image: url('.//img-Some/rawpixel-196464-unsplash.png');
+    border-radius: 5%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.mm{
+    display: flex;
+    justify-content: center;
+}
+.ddddd{
+    text-align: center;
+}
+
+.opros{
+    margin-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid blue;
+    border-radius: 5%;
+    margin-bottom: 20px;
+}
+
+
+.curse{
+    display: flex;
+    justify-content: space-around;
+}
+.inp{
+    height: 40px;
+    width: 200px;
+    margin-left: 50px;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    border-radius: 20%;
+    
+}
+.vvv{
+    z-index: 1;
+    position: relative;
+    
+    
+}
+.bbb{
+    z-index: 2;
+    position: absolute;
+    top: 0%;
+}
+.zzz{
+    z-index: 3;
+    position: absolute;
+    top: 0%;
+    right: 0;
+}
+.fff{
+    z-index: 4;
+    position: absolute;
+    top: 5%;
+    right: 62%;
+}
+.dds{
+    z-index: 5;
+    position: absolute;
+    top: 5%;
+    right: 25%;
+    margin-bottom: 20px;
+}
+.qqq{
+    color: aqua;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.lor{
+    width: 40%;
+    text-align: center;
+    
+}
+.dfd{
+    display: flex;
+    justify-content: center;
+}
+.qwe{
+    color: aqua;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px; 
+    margin-bottom: 50px;   
+    
+}
+.and{
+    display: flex;
+    justify-content: space-around;
+}
+.and{
+    margin-bottom: 30px;
+}
+.qr{
+    width: 100%;
+    margin: auto 0;
+    border: 1px solid black;
+    background-color: black;margin-bottom: 30px;
+    
+    
+}
+.y{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}

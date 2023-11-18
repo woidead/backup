@@ -1,0 +1,56 @@
+body{
+    background: #000;
+    
+}
+
+h1{
+    color: violet;
+    font-size: 100px;
+    font-family:monospace;
+}
+
+.medina1{
+    color: blue;
+    font-size: 100px;
+    font-family:monospace;
+}
+
+
+.Amina{
+    color: rgb(4, 255, 0);
+    font-size: 100px;
+    font-family:monospace;
+}
+
+.Madina{
+    font-size: 200px;
+    color: aqua;
+}
+
+
+.h1{
+    color: yellow;
+}
+
+
+
+
+.parent2{
+    display: flex;
+    flex-direction: column;
+}
+
+.parent2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent3{
+    display: flex;
+    justify-content:space-around;
+}
+
+.parent4{
+    display: flex;
+    justify-content: space-evenly;
+}

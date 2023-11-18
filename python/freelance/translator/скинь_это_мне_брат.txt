@@ -1,0 +1,417 @@
+
+
+#: templates/shop/shop-details.html:28 templates/shop/shop-grid-left.html:14
+msgid "Главная"
+msgstr "home"
+
+#: templates/base.html:94 templates/components/index.html:101
+msgid "Товары"
+msgstr "Goods"
+
+#: templates/components/index.html:681
+msgid "Продукция"
+msgstr "Production"
+
+#: templates/components/solutions.html:69
+msgid "Решения"
+msgstr "Solutions"
+
+#: templates/blog/designers-grid.html:11 templates/components/index.html:120
+msgid "Дизайнеры"
+msgstr "Designers"
+
+#: templates/base.html:118 templates/components/index.html:125
+msgid "Команда B"
+msgstr "Team B"
+
+#: templates/base.html:131 templates/components/index.html:138
+msgid "Философия дизайнера"
+msgstr "Philosophy of the designer"
+
+#: templates/components/index.html:145
+msgid "Посты"
+msgstr "Posts"
+
+#: templates/components/index.html:150
+msgid "Последние посты"
+msgstr "Latest posts"
+
+#: templates/components/index.html:166
+msgid "комментариев"
+msgstr "comments"
+
+#: templates/base.html:171 templates/components/index.html:179
+msgid "Постов пока нет"
+msgstr "No posts yet"
+
+#: templates/components/projects.html:13 templates/components/projects.html:16
+msgid "Проекты"
+msgstr "Projects"
+
+#: templates/base.html:181 templates/components/index.html:189
+msgid "Контакты"
+msgstr "Contacts"
+
+#: templates/base.html:236
+msgid "Свяжитесь с Нами"
+msgstr "Contact us"
+
+#: templates/base.html:263
+msgid "Введите свою электронную почту чтобы получать все послдение новости."
+msgstr "Enter your email to receive all the latest news."
+
+#: templates/base.html:311 templates/components/index.html:752
+msgid "Отмена"
+msgstr "Cancel"
+
+#: templates/base.html:316
+msgid "Название категории товара"
+msgstr "Product category name"
+
+#: templates/blog/designer-details.html:103
+msgid "Все Дизайнеры"
+msgstr "All Designers"
+
+#: templates/blog/designer-details.html:147
+msgid "Продукция, в дизайне которых принимал(-а) участие "
+msgstr "Products in the design of which he took part"
+
+#: templates/shop/shop-details.html:140
+msgid "Добавить в Избранное"
+msgstr "Add to favorites"
+
+#: templates/blog/designers-grid.html:76
+msgid "Топ дизайнеров"
+msgstr "Top designers"
+
+#: templates/blog/post-detail.html:32
+msgid "Категории постов"
+msgstr "Post Categories"
+
+#: templates/blog/post-detail.html:99
+msgid "Предыдущий пост"
+msgstr "Previous post"
+
+#: templates/blog/post-detail.html:107
+msgid "Следующий пост"
+msgstr "next post"
+
+#: templates/blog/post-detail.html:138
+msgid "Оставьте комментарий"
+msgstr "Leave a comment"
+
+#: templates/blog/post-detail.html:142 templates/shop/shop-details.html:225
+msgid "Ваша почта не будет опубликована."
+msgstr "Your mail will not be published."
+
+#: templates/components/auth.html:69
+msgid "Авторизация"
+msgstr "Authorization"
+
+#: templates/components/auth.html:88 templates/components/auth.html:166
+msgid "Зарегестрироваться"
+msgstr "Register"
+
+#: templates/components/auth.html:115
+msgid "Войти"
+msgstr "To come in"
+
+#: templates/components/auth.html:164
+msgid "Получать рассылку Burotime и последние новости на почту "
+msgstr "Receive Burotime newsletter and latest news by email"
+
+#: templates/components/contacts.html:11 templates/components/contacts.html:14
+msgid "Связаться с Нами"
+msgstr "Connect with us"
+
+#: templates/components/contacts.html:57
+msgid "Номер"
+msgstr "Number"
+
+#: templates/components/contacts.html:67
+msgid "Обслуживание Клиентов"
+msgstr "Customer service"
+
+#: templates/components/contacts.html:70
+msgid "С понедельника по воскресенье"
+msgstr "Monday to Sunday"
+
+#: templates/components/contacts.html:71
+msgid "9:00 – 19:00 Бишкек (UTC +3)"
+msgstr "9:00 – 19:00 Bishkek (UTC +3)"
+
+#: templates/components/contacts.html:98
+msgid "Задайте нам свои вопросы!"
+msgstr "Ask us your questions!"
+
+#: templates/components/contacts.html:99
+msgid "Ответы приходят в течение суток."
+msgstr "Answers come within a day."
+
+#: templates/components/index.html:427
+msgid "Ваше имя"
+msgstr "your name"
+
+#: templates/components/index.html:428
+msgid "Ваша почта"
+msgstr "Your mail"
+
+#: templates/components/contacts.html:122
+msgid "Ваше сообщение"
+msgstr "your message"
+
+#: templates/components/index.html:290 templates/shop/shop-grid-left.html:26
+msgid "Категории"
+msgstr "Categories"
+
+#: templates/components/index.html:351 templates/components/index.html:429
+msgid "Контактный номер"
+msgstr "contact number"
+
+#: templates/components/index.html:352
+msgid "Получить консультацию"
+msgstr "To get a consultation"
+
+#: templates/components/index.html:388
+msgid "3D визуализация Вашего помещения в помощь при выборе мебели совершенно "
+msgstr "3D visualization of your room to help you choose furniture"
+
+#: templates/components/index.html:388
+msgid "бесплатно!"
+msgstr "for free!"
+
+#: templates/components/index.html:391
+msgid "Готовые проекты"
+msgstr "Finished projects"
+
+#: templates/components/index.html:396 templates/components/index.html:404
+msgid "Кабинет руководителя"
+msgstr "Head office"
+
+#: templates/components/index.html:397
+msgid "Стол «ARMADA», кресло «Grand», диван «STAY»"
+msgstr "ARMADA table, Grand chair, STAY sofa"
+
+#: templates/components/index.html:405
+msgid "Стол «NOTE», кресла «FOLDIT»"
+msgstr "Table "NOTE", armchairs "FOLDIT""
+
+#: templates/components/index.html:412
+msgid "Open Space зона"
+msgstr "Open Space zone"
+
+#: templates/components/index.html:413
+msgid "Стол «PUZZLE», кресла «ASSIST», тумбочка «HOLM», диван «DEM»"
+msgstr "PUZZLE table, ASSIST armchairs, HOLM nightstand, DEM sofa"
+
+#: templates/components/index.html:430
+msgid "Оставить заявку на 3D визуализацию"
+msgstr "Leave a request for 3D visualization"
+
+#: templates/components/index.html:503
+msgid "Откройте для себя диван Mundo"
+msgstr "Discover the Mundo sofa"
+
+#: templates/components/index.html:504
+msgid "Словно бы лежать на "
+msgstr "Like lying on"
+
+#: templates/components/index.html:504
+msgid "облаке"
+msgstr "clouds"
+
+#: templates/components/index.html:566 templates/components/page-about.html:143
+msgid "Бесплатная Доставка"
+msgstr "Free shipping"
+
+#: templates/components/index.html:567 templates/components/page-about.html:144
+msgid "Вам остается лишь выбрать место!"
+msgstr "You just have to choose a place!"
+
+#: templates/components/index.html:610 templates/components/page-about.html:183
+msgid "Разные способы оплаты"
+msgstr "Different payment methods"
+
+#: templates/components/index.html:611 templates/components/page-about.html:184
+msgid "Оплата наличными, картой и в рассрочку."
+msgstr "Payment by cash, card and in installments."
+
+#: templates/components/index.html:635 templates/components/page-about.html:229
+msgid "Онлайн Поддержка"
+msgstr "Online Support"
+
+#: templates/components/index.html:637 templates/components/page-about.html:230
+msgid "с 9:00 по 19:00 каждый день!"
+msgstr "from 9:00 to 19:00 every day!"
+
+#: templates/components/index.html:695
+msgid "Наш адрес"
+msgstr "Our address"
+
+#: templates/components/index.html:755
+msgid "Рекомендуемое"
+msgstr "Recommended"
+
+#: templates/components/page-about.html:15
+msgid "О Нас"
+msgstr "About Us"
+
+#: templates/components/page-about.html:49
+msgid "Шик и блеск"
+msgstr "Chic and shine"
+
+#: templates/components/page-about.html:50
+msgid "Мы в Burotime считаем что в первую очередь важен комфорт и престиж."
+msgstr "We at Burotime believe that comfort and prestige are the most important."
+
+#: templates/components/page-about.html:82
+msgid "Современный дизайн"
+msgstr "Modern design"
+
+#: templates/components/page-about.html:87
+msgid "Подробнее"
+msgstr "More"
+
+#: templates/components/page-about.html:208
+msgid "15 дней возврата"
+msgstr "15 days return"
+
+#: templates/components/page-about.html:209
+msgid "Вы можете вернуть мебель в течении 15 дней!"
+msgstr "You can return furniture within 15 days!"
+
+#: templates/components/page-about.html:287
+msgid "Качество на каждом шагу"
+msgstr "Quality at every step"
+
+#: templates/components/philosophy.html:14
+msgid "Философия Дизайнера"
+msgstr "Philosophy Designer"
+
+#: templates/components/philosophy.html:140
+msgid "ЭМПАТИЯ"
+msgstr "EMPATHY"
+
+#: templates/components/philosophy.html:144
+msgid "ЭРГОНОМИКА"
+msgstr "ERGONOMICS"
+
+#: templates/components/philosophy.html:148
+msgid "ФУНКЦИОНАЛЬНОСТЬ И ЭСТЕТИКА"
+msgstr "FUNCTIONALITY AND AESTHETICS"
+
+#: templates/components/philosophy.html:152
+msgid "ПРИМЕНИМОСТЬ"
+msgstr "APPLICABILITY"
+
+#: templates/components/philosophy.html:156
+msgid "ДОСТУПНОСТЬ"
+msgstr "AVAILABILITY"
+
+#: templates/components/philosophy.html:160
+msgid "ОРИГИНАЛЬНОСТЬ"
+msgstr "ORIGINALITY"
+
+#: templates/components/philosophy.html:164
+msgid "ОХРАНА ОКРУЖАЮЩЕЙ СРЕДЫ"
+msgstr "ENVIRONMENTAL PROTECTION"
+
+#: templates/components/solutions.html:72
+msgid "В дополнение к существующему "
+msgstr "In addition to the existing"
+
+#: templates/shop/shop-details.html:29 templates/shop/shop-wishlist.html:15
+msgid "Магазин"
+msgstr "Shop"
+
+#: templates/shop/shop-details.html:95
+msgid "отзывов"
+msgstr "reviews"
+
+#: templates/shop/shop-details.html:105
+msgid "Размер"
+msgstr "Size"
+
+#: templates/shop/shop-details.html:117 templates/shop/shop-details.html:182
+msgid "Цвет"
+msgstr "Color"
+
+#: templates/shop/shop-details.html:149
+msgid "Дизайнер: "
+msgstr "Designer:"
+
+#: templates/shop/shop-details.html:151
+msgid "Категория: "
+msgstr "Category:"
+
+#: templates/shop/shop-details.html:164
+msgid "Описание"
+msgstr "Description"
+
+#: templates/shop/shop-details.html:167
+msgid "Дополнительная информация"
+msgstr "Additional Information"
+
+#: templates/shop/shop-details.html:170
+msgid "Отзывов "
+msgstr "Reviews"
+
+#: templates/shop/shop-details.html:195
+msgid "Отзывов у "
+msgstr "Reviews from"
+
+#: templates/shop/shop-details.html:195
+msgid "Обеденный стол"
+msgstr "Dinner table"
+
+#: templates/shop/shop-details.html:220
+msgid "Добавить Отзыв"
+msgstr "Add a review"
+
+#: templates/shop/shop-details.html:225
+msgid "Все обязательные поля отмечены"
+msgstr "All required fields are checked"
+
+#: templates/shop/shop-details.html:228
+msgid "Ваша Оценка"
+msgstr "Your Rating"
+
+#: templates/shop/shop-grid-fullwidth.html:28
+msgid "Показано "
+msgstr "Shown"
+
+#: templates/shop/shop-grid-fullwidth.html:28
+msgid "результатов"
+msgstr "results"
+
+#: templates/shop/shop-grid-left.html:106
+msgid "Добавить в избранное"
+msgstr "Add to favorites"
+
+#: templates/shop/shop-grid-fullwidth.html:92
+msgid "оценок"
+msgstr "ratings"
+
+#: templates/shop/shop-grid-left.html:11 templates/shop/shop-grid-left.html:14
+msgid "Каталог"
+msgstr "Catalogue"
+
+#: templates/shop/shop-grid-left.html:86
+msgid "Показано"
+msgstr "Shown"
+
+#: templates/shop/shop-grid-left.html:86
+msgid "результатов"
+msgstr "results"
+
+#: templates/shop/shop-wishlist.html:11 templates/shop/shop-wishlist.html:15
+msgid "Избранное"
+msgstr "Favorites"
+
+#: templates/shop/shop-wishlist.html:14
+msgid "Главное"
+msgstr "Main"
+
+#: templates/shop/shop-wishlist.html:44
+msgid "в стоке или нет"
+msgstr "in stock or not"

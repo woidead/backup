@@ -1,0 +1,54 @@
+.a{
+    width: 200px;
+    height: 150px;
+    background-color: green;
+    margin: 0 0 100px 20px;
+}
+.my-flex{
+    display: flex ;
+    justify-content: space-between;
+}
+.my-flex2{
+    display: flex;
+    justify-content: space-around;
+}
+.my-flex3{
+    display: flex;
+    justify-content: center;
+}
+.my-flex4{
+    display: flex;
+    justify-content: space-evenly;
+}
+.my-flex5{
+    display: flex;
+    justify-content: flex-end;
+}
+.my-flex6{
+    display: flex;
+    justify-content: flex-start;
+}
+.my-flex7{
+    display: flex;
+    flex-direction: row;
+}
+.my-flex8{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.my-flex9{
+    display: flex;
+    flex-direction: column;
+}
+.my-flex10{
+    display: flex;
+    flex-direction: column-reverse;}
+.my-flex11{
+    display: flex;
+    align-items: flex-start;
+}
+
+.my-flex13{
+    display: flex;
+    align-items: center;
+}

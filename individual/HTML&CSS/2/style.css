@@ -1,0 +1,19 @@
+a{
+    text-decoration: none;
+    color:black;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    border-right: 1px solid black;
+}
+td{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+
+}
+/* input[type="range"] {
+  -webkit-appearance: slider-vertical;
+} */

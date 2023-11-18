@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 0Articlespx; 
+}
+body::-webkit-scrollbar-track {
+    background: #F7F7F7; 
+}
+.navbarbag{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Rectangle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .navbar{
+        width: 100%;
+        height: 13vh;
+
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .wildlogo{
+        width: 155px;
+        height: 60px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 60px;
+        color: #F7F7F7;
+    }
+    .text{
+        display: flex;
+        gap: 60px;
+        color: #F7F7F7;
+    }
+    .texth{
+        height: 108px;
+        width: 274px;
+        padding-top: 120px;
+        
+        h1{
+            width: 199px;
+            height: 72px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            color: #CD6326;
+        }
+        p{
+            width: 274px;
+            height: 108px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #F7F7F7;
+            margin-top: 50px;
+        }
+        .donat{
+            width: 160px;
+            height: 60px;
+            margin-top: 50px;
+            background: #CD6326;
+            border-radius: 5px;
+            border: none;
+            color: #F7F7F7;
+        }
+    }
+}
+.cardssec{
+    height: 1368px;
+    width: 100%;
+    background: #CCCCCC;
+    // text-align: center;
+    .up{
+        width: 100%;
+        height: 368px;
+        text-align: center;    
+        display: flex;   
+        justify-content: center;
+        flex-direction: column;
+    }
+    h2{
+        
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 72px;
+        color: #333333;
+        padding-top: 120px;
+    }
+    p{
+       
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #666666;
+        margin-top: 20px;
+        margin-bottom: 120px;
+    }
+    .cen{
+        height: 360px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 239px;
+    }
+    .vec{
+        width: 26px;
+        height: 39px;
+
+    }
+    .deer{
+        width: 300px;
+        height: 360px;
+        background-image: url(../img/Rectangle.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Squirrel{
+        width: 300px;
+        height: 360px;
+        background-image: url(../img/Rectangle\ \(1\).jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Bird{
+        width: 300px;
+        height: 360px;
+        background-image: url(../img/Rectangle\ \(2\).jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    small{
+        margin-bottom: 40px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 27px;
+        text-align: center;
+        color: #F7F7F7;
+    }
+    h4{
+        margin-bottom: 10px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        text-align: center;
+        color: #F7F7F7;
+    }
+
+
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 40px;
+        text-align: center;
+        color: #333333;
+    }
+    .ints{
+        margin-top: 60px;
+        margin-bottom: 240px;
+    }
+    .int1{
+        width: 540px;
+        height: 60px;
+    }
+    .int2{
+        width: 120px;
+        height: 60px;
+    }
+}
+footer{
+    width: 100%;
+    height: 360px;
+    background-image: url(../img/Rectangle\ \(3\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .wildlogo{
+        width: 155px;
+        height: 60px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 60px;
+        color: #F7F7F7;
+    }
+    h4{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 60px;
+        color: #F7F7F7;
+    }
+    .fot{
+        width: 100%;
+        height: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    .logoss{
+        display: flex;
+        gap: 16px;
+    }
+    .texti{
+        display: flex;
+        gap: 86px;
+    }
+    .links{
+        display: flex;
+        gap: 27px;
+    }
+
+}

@@ -1,0 +1,22 @@
+.con{
+    width: 1200px;
+    border: 2px solid red;
+    margin: 0 auto;
+}
+nav{
+    background-color: darkslategrey;
+    color: white;
+}
+.nv{
+    display: flex;
+    justify-content: space-between;
+    
+}
+ul{
+    display: flex;
+    gap: 35px;
+}
+li{
+    font-size: 30px;
+    list-style: none;
+}

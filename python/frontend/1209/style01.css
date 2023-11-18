@@ -1,0 +1,257 @@
+.box{
+    width: 890px;
+    height: 890px;
+    border: 1px solid red;
+    position: relative;
+}
+.g1{
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    animation: box1 2s infinite;
+    transition: 1s;
+}
+
+.d1{
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    animation: box2 2s infinite;
+    transition: 1s;
+}
+.g2{
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    animation: box3 2s infinite;
+    transition: 1s;
+}
+.d2{width: 50px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    animation: box4 2s infinite;
+    transition: 1s;
+}
+.g3{
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+    animation: box5 2s infinite;
+    transition: 1s;
+}
+.d3{width: 50px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    animation: box6 2s infinite;
+    transition: 1s;
+}
+.g4{
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    top: 360px;
+    left: 360px;
+    animation: box7 2s infinite;
+    transition: 1s;
+    
+}
+.d4{
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    
+    position: absolute;
+    top: 420px;
+    left: 420px;
+    animation: box8 2s infinite;
+    transition: 1s;
+}
+
+@keyframes box1 {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 840px;
+        left: 0;
+    }
+    50%{
+        top: 840px;
+        left: 840px;
+    }
+    75%{
+        top: 0;
+        left: 840px;
+    }
+    100%{
+        top: 0;left: 0;
+    }
+}
+@keyframes box2 {
+    0%{
+        top: 60px;
+        left: 60px;
+    }
+    25%{top: 60px;
+        left: 780px;
+        
+    }
+    50%{
+        top: 780px;
+        left: 780px;
+    }
+    75%{
+        top: 780px;
+        left: 60px;
+    }
+    100%{
+        top: 60px;
+        left: 60px;
+    }
+}
+@keyframes box3{
+    0%{
+        top: 120px;
+        left: 120px;
+    }
+    25%{
+        top: 720px;
+        left: 120px;
+    }
+    50%{
+        top: 720px;
+        left: 720px;
+    }
+    75%{
+        top: 120px;
+        left: 720px;
+    }
+    100%{
+        top: 120px;left: 120px;
+    }
+}
+@keyframes box4 {
+    0%{
+        top: 180px;
+        left: 180px;
+    }
+    25%{top: 180px;
+        left: 660px;
+        
+    }
+    50%{
+        top: 660px;
+        left: 660px;
+    }
+    75%{
+        top: 660px;
+        left: 180px;
+    }
+    100%{
+        top: 180px;
+        left: 180px;
+    }
+}
+@keyframes box5{
+    0%{
+        top: 240px;
+        left: 240px;
+    }
+    25%{
+        top: 600px;
+        left: 240px;
+    }
+    50%{
+        top: 600px;
+        left: 600px;
+    }
+    75%{
+        top: 240px;
+        left: 600px;
+    }
+    100%{
+        top: 240px;left: 240px;
+    }
+}
+@keyframes box6 {
+    0%{
+        top: 300px;
+        left: 300px;
+    }
+    25%{top: 300px;
+        left: 540px;
+        
+    }
+    50%{
+        top: 540px;
+        left: 540px;
+    }
+    75%{
+        top: 540px;
+        left: 300px;
+    }
+    100%{
+        top: 300px;
+        left: 300px;
+    }
+}
+@keyframes box7{
+    0%{
+        top: 360px;
+        left: 360px;
+    }
+    25%{
+        top: 480px;
+        left: 360px;
+    }
+    50%{
+        top: 480px;
+        left: 480px;
+    }
+    75%{
+        top: 360px;
+        left: 480px;
+    }
+    100%{
+        top: 360px;left: 360px;
+    }
+}
+@keyframes box8{
+    from, to{
+        border-radius: 50%;
+        transform: rotate(720deg);
+    }
+   
+    50%{
+        transform: rotate(-720deg);
+        border-radius: 0%;
+    }
+    
+    
+}
+

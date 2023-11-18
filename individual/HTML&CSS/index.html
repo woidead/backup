@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="carousel">
+    <div class="categories">
+      <button class="category" onclick="showCategory('panties')">Трусики</button>
+      <button class="category" onclick="showCategory('diapers')">Подгузники</button>
+      <button class="category" onclick="showCategory('wet_wipes')">Влажные салфетки</button>
+    </div>
+
+    <div class="cards" id="cardsContainer">
+      <!-- Трусики -->
+      <div class="panties card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <div class="panties card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <div class="panties card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <div class="panties card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <div class="panties card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <div class="panties card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>ddd</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <!-- Добавьте остальные карточки трусиков -->
+
+
+      <!-- Подгузники -->
+      <div class="diapers card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>f</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <div class="diapers card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <div class="diapers card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <div class="diapers card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <div class="diapers card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <!-- Добавьте остальные карточки подгузников -->
+
+
+      <!-- Влажные салфетки -->
+      <div class="wet_wipes card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <div class="wet_wipes card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <div class="wet_wipes card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <div class="wet_wipes card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <div class="wet_wipes card">
+        <img src="{% static '/img/catologue/Opera Снимок_2023-07-06_205302_tomiko-site.pdf.png'%}" alt="">
+        <div class="description-card">
+
+          <h3>Трусики</h3>
+          <span>Описание товара</span>
+          <input type="button" value="Подробнее">
+        </div>
+      </div>
+      <!-- Добавьте остальные карточки влажных салфеток -->
+    </div>
+
+    <div class="pagination" id="pagination">
+      <!-- Здесь будут появляться кнопки пагинации -->
+    </div>
+  </div>
+
+  <script>
+    const CARDS_PER_PAGE = 4;
+    let currentCategory = 'panties'; // По умолчанию показываем карточки влажных салфеток
+    let currentPage = 1;
+
+    function showCategory(category) {
+      currentCategory = category;
+      currentPage = 1;
+      
+      updatePagination();
+      updateCards();
+    }
+
+
+    function updatePagination() {
+      const cardsContainer = document.getElementById('cardsContainer');
+      const paginationContainer = document.getElementById('pagination');
+      const categoryCards = cardsContainer.getElementsByClassName(currentCategory);
+
+      const totalPages = Math.ceil(categoryCards.length / CARDS_PER_PAGE);
+      paginationContainer.innerHTML = '';
+
+      for (let i = 1; i <= totalPages; i++) {
+        const button = document.createElement('button');
+        button.textContent = '';
+        button.classList.add('page-button');
+
+        if (i === currentPage) {
+          button.classList.add('active');
+        }
+
+        button.onclick = () => {
+          currentPage = i;
+          updateCards();
+          updatePagination();
+        };
+
+        paginationContainer.appendChild(button);
+      }
+    }
+
+    function updateCards() {
+      const cardsContainer = document.getElementById('cardsContainer');
+      const allCards = cardsContainer.getElementsByClassName('card');
+
+      for (let card of allCards) {
+        card.style.display = 'none';
+      }
+
+      const categoryCards = cardsContainer.getElementsByClassName(currentCategory);
+      const startIndex = (currentPage - 1) * CARDS_PER_PAGE;
+      const endIndex = startIndex + CARDS_PER_PAGE;
+
+      for (let i = startIndex; i < endIndex; i++) {
+        if (categoryCards[i]) {
+          categoryCards[i].style.display = 'block';
+        }
+      }
+    }
+
+    // Добавляем следующую строку для показа первой категории при загрузке страницы
+    showCategory(currentCategory);
+  </script>
+
+
+
+</body>
+
+</html>

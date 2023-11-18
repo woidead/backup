@@ -1,0 +1,108 @@
+.all{
+    display: flex;
+    gap: 20px;
+}
+.border{
+    width: 200px;
+    height: 500px;
+    border: 1px solid;
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    background-color: grey;
+    
+    
+}
+.circle {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    border-radius: 50%;
+    
+    /* right: 50%;
+    bottom: 80%;
+    translate: 50% 50%; */
+}
+.red{ z-index: 1;
+    background-color: grey;
+    right: 50%;
+    bottom: 83%;
+    translate: 50% 50%;
+
+}
+.yellow{
+    z-index: 2;
+    background-color: grey;
+    right: 50%;
+    bottom: 50%;
+    translate: 50% 50%;
+}
+.green{
+    z-index: 2;
+    background-color: grey;
+    right: 50%;
+    bottom: 17%;
+    translate: 50% 50%;
+}
+.red:active{
+    background-color: red;
+}
+.yellow:active{
+    background-color: yellow;
+}
+.green:active{
+    background-color: green;
+}
+.border2{
+    width: 200px;
+    height: 500px;
+    border: 1px solid;
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    background-color: grey;
+    
+    
+}
+.circle2 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    border-radius: 50%;
+    
+    /* right: 50%;
+    bottom: 80%;
+    translate: 50% 50%; */
+}
+.red2{ z-index: 1;
+    background-color: grey;
+    right: 50%;
+    bottom: 83%;
+    translate: 50% 50%;
+
+}
+.yellow2{
+    z-index: 2;
+    background-color: grey;
+    right: 50%;
+    bottom: 50%;
+    translate: 50% 50%;
+}
+.green2{
+    z-index: 2;
+    background-color: grey;
+    right: 50%;
+    bottom: 17%;
+    translate: 50% 50%;
+}
+.red2:hover{
+    background-color: red;
+}
+.yellow2:hover{
+    background-color: yellow;
+}
+.green2:hover{
+    background-color: green;
+}

@@ -1,0 +1,666 @@
+--create table autho(id int, name varchar(50), age int);
+--insert into autho values(1,'Антон Чехов',1860), (2, 'Владимир Набоков', 1899), (3, 'Лев Толстой', 1828), (4,'Насон Грядущий', 1930), (5, 'Александр Грибоедов', 1795), (6, 'Александр Островский', 1823), (7,'Марина Цветаева', 1823), (8, 'Александр Герцен', 1892), (9, 'Федор Достоевский', 1812), (10 , 'Николай Некрасов', 1821), (11, 'Николай Чернышевски', 1828), (12, 'Софья Ковалевская', 1850); 
+--select * from autho where id in (7, 12, 8, 4) or age = 1877;
+
+
+--create table spouse(id int, name varchar(30),author_id int,  age int);
+--insert into spouse values(1, 'мария бахметьева',6 , 1869), (2, 'фекла викторовна', 10 , 1877), (3, 'сергей эфрон', 7, 1912), (4, 'ольга васильевна', 11, 1853), (5,'мария исаева', 9, 1857), (6,'наталья захрина', 8, 1838), (7, 'вера слоним', 2, 1925), (8, 'софья берс' , 3, 1862), (9, 'нино чавчавадзе', 5, 1828), (10, 'ольга книппер', 1, 1901), (11, 'владимир ковалевский', 12, 1868), (12, 'анна сниткина', 3, 1867);
+select * from autho where age = 1828 or id < 11;
+
+iii=# select * from spouse where  name iLIKE '_нн__________';
+ id |     name      | author_id | age
+----+---------------+-----------+------
+ 12 | анна сниткина |         3 | 1867
+(1 row)
+
+
+iii=# select * from spouse where  name iLIKE '%е%е%';
+ id |       name       | author_id | age
+----+------------------+-----------+------
+  1 | мария бахметьева |         6 | 1869
+  3 | сергей эфрон     |         7 | 1912
+(2 rows)
+
+
+iii=# select * from spouse where  name iLIKE 'а%в';
+ id | name | author_id | age
+----+------+-----------+-----
+(0 rows)
+
+
+iii=# select * from spouse where  name iLIKE 'А%в';
+ id | name | author_id | age
+----+------+-----------+-----
+(0 rows)
+
+
+iii=# select * from spouse;
+ id |         name         | author_id | age
+----+----------------------+-----------+------
+  1 | мария бахметьева     |         6 | 1869
+  2 | фекла викторовна     |        10 | 1877
+  3 | сергей эфрон         |         7 | 1912
+  4 | ольга васильевна     |        11 | 1853
+  5 | мария исаева         |         9 | 1857
+  6 | наталья захрина      |         8 | 1838
+  7 | вера слоним          |         2 | 1925
+  8 | софья берс           |         3 | 1862
+  9 | нино чавчавадзе      |         5 | 1828
+ 10 | ольга книппер        |         1 | 1901
+ 11 | владимир ковалевский |        12 | 1868
+ 12 | анна сниткина        |         3 | 1867
+(12 rows)
+
+
+iii=# select * from autho where name iLIKE 'А%в';
+ id |        name         | age
+----+---------------------+------
+  1 | Антон Чехов         | 1860
+  5 | Александр Грибоедов | 1795
+(2 rows)
+
+
+iii=# select * from autho where name iLIKE '%о%';
+ id |         name         | age
+----+----------------------+------
+  1 | Антон Чехов          | 1860
+  2 | Владимир Набоков     | 1899
+  3 | Лев Толстой          | 1828
+  4 | Насон Грядущий       | 1930
+  5 | Александр Грибоедов  | 1795
+  6 | Александр Островский | 1823
+  9 | Федор Достоевский    | 1812
+ 10 | Николай Некрасов     | 1821
+ 11 | Николай Чернышевски  | 1828
+ 12 | Софья Ковалевская    | 1850
+(10 rows)
+
+
+iii=# select * from autho where name iLIKE '%о%' and id between 1 and 9;
+ id |         name         | age
+----+----------------------+------
+  1 | Антон Чехов          | 1860
+  2 | Владимир Набоков     | 1899
+  3 | Лев Толстой          | 1828
+  4 | Насон Грядущий       | 1930
+  5 | Александр Грибоедов  | 1795
+  6 | Александр Островский | 1823
+  9 | Федор Достоевский    | 1812
+(7 rows)
+
+
+iii=# select * from autho where name iLIKE '%о%о%' and id between 1 and 9;
+ id |        name         | age
+----+---------------------+------
+  1 | Антон Чехов         | 1860
+  2 | Владимир Набоков    | 1899
+  3 | Лев Толстой         | 1828
+  5 | Александр Грибоедов | 1795
+  9 | Федор Достоевский   | 1812
+(5 rows)
+
+
+iii=# select name
+iii-# from autho
+iii-# where id > 5;
+         name
+----------------------
+ Александр Островский
+ Марина Цветаева
+ Александр Герцен
+ Федор Достоевский
+ Николай Некрасов
+ Николай Чернышевски
+ Софья Ковалевская
+(7 rows)
+
+
+iii=# select *
+iii-# from autho
+iii-# order by name;
+ id |         name         | age
+----+----------------------+------
+ 12 | Софья Ковалевская    | 1850
+  2 | Владимир Набоков     | 1899
+  9 | Федор Достоевский    | 1812
+  3 | Лев Толстой          | 1828
+  5 | Александр Грибоедов  | 1795
+  8 | Александр Герцен     | 1892
+  6 | Александр Островский | 1823
+  1 | Антон Чехов          | 1860
+  4 | Насон Грядущий       | 1930
+ 11 | Николай Чернышевски  | 1828
+ 10 | Николай Некрасов     | 1821
+  7 | Марина Цветаева      | 1823
+(12 rows)
+
+
+iii=# select *
+iii-# from autho
+iii-# order by age desc;
+ id |         name         | age
+----+----------------------+------
+  4 | Насон Грядущий       | 1930
+  2 | Владимир Набоков     | 1899
+  8 | Александр Герцен     | 1892
+  1 | Антон Чехов          | 1860
+ 12 | Софья Ковалевская    | 1850
+ 11 | Николай Чернышевски  | 1828
+  3 | Лев Толстой          | 1828
+  7 | Марина Цветаева      | 1823
+  6 | Александр Островский | 1823
+ 10 | Николай Некрасов     | 1821
+  9 | Федор Достоевский    | 1812
+  5 | Александр Грибоедов  | 1795
+(12 rows)
+
+
+iii=# select *
+iii-# from autho
+iii-# order by name asc;
+ id |         name         | age
+----+----------------------+------
+ 12 | Софья Ковалевская    | 1850
+  2 | Владимир Набоков     | 1899
+  9 | Федор Достоевский    | 1812
+  3 | Лев Толстой          | 1828
+  5 | Александр Грибоедов  | 1795
+  8 | Александр Герцен     | 1892
+  6 | Александр Островский | 1823
+  1 | Антон Чехов          | 1860
+  4 | Насон Грядущий       | 1930
+ 11 | Николай Чернышевски  | 1828
+ 10 | Николай Некрасов     | 1821
+  7 | Марина Цветаева      | 1823
+(12 rows)
+
+
+iii=# select *
+iii-# from autho
+iii-# order by name desc;
+ id |         name         | age
+----+----------------------+------
+  7 | Марина Цветаева      | 1823
+ 10 | Николай Некрасов     | 1821
+ 11 | Николай Чернышевски  | 1828
+  4 | Насон Грядущий       | 1930
+  1 | Антон Чехов          | 1860
+  6 | Александр Островский | 1823
+  8 | Александр Герцен     | 1892
+  5 | Александр Грибоедов  | 1795
+  3 | Лев Толстой          | 1828
+  9 | Федор Достоевский    | 1812
+  2 | Владимир Набоков     | 1899
+ 12 | Софья Ковалевская    | 1850
+(12 rows)
+Server [localhost]:
+Database [postgres]:
+Port [5432]:
+Username [postgres]:
+Password for user postgres:
+psql (13.7)
+WARNING: Console code page (866) differs from Windows code page (1251)
+         8-bit characters might not work correctly. See psql reference
+         page "Notes for Windows users" for details.
+Type "help" for help.
+
+postgres=# \dt iii
+Did not find any relation named "iii".
+postgres=#
+postgres=# \dt
+Did not find any relations.
+postgres=# \l
+                                          List of databases
+   Name    |  Owner   | Encoding |       Collate       |        Ctype        |   Access privileges
+-----------+----------+----------+---------------------+---------------------+-----------------------
+ 090801    | postgres | UTF8     | Russian_Russia.1251 | Russian_Russia.1251 |
+ 1008      | postgres | UTF8     | Russian_Russia.1251 | Russian_Russia.1251 |
+ iii       | postgres | UTF8     | Russian_Russia.1251 | Russian_Russia.1251 |
+ postgres  | postgres | UTF8     | Russian_Russia.1251 | Russian_Russia.1251 |
+ template0 | postgres | UTF8     | Russian_Russia.1251 | Russian_Russia.1251 | =c/postgres          +
+           |          |          |                     |                     | postgres=CTc/postgres
+ template1 | postgres | UTF8     | Russian_Russia.1251 | Russian_Russia.1251 | =c/postgres          +
+           |          |          |                     |                     | postgres=CTc/postgres
+(6 rows)
+
+
+postgres=# \dt
+Did not find any relations.
+postgres=# iii
+postgres-# \dt iii
+Did not find any relation named "iii".
+postgres-# \c iii
+You are now connected to database "iii" as user "postgres".
+iii-# show table
+iii-# ;
+ОШИБКА:  ошибка синтаксиса (примерное положение: "iii")
+LINE 1: iii
+        ^
+iii=# show table;
+ОШИБКА:  ошибка синтаксиса (примерное положение: "table")
+LINE 1: show table;
+             ^
+iii=# show tables;
+ОШИБКА:  нераспознанный параметр конфигурации: "tables"
+iii=# select * from autho;
+ id |         name         | age
+----+----------------------+------
+  1 | Антон Чехов          | 1860
+  2 | Владимир Набоков     | 1899
+  3 | Лев Толстой          | 1828
+  4 | Насон Грядущий       | 1930
+  5 | Александр Грибоедов  | 1795
+  6 | Александр Островский | 1823
+  7 | Марина Цветаева      | 1823
+  8 | Александр Герцен     | 1892
+  9 | Федор Достоевский    | 1812
+ 10 | Николай Некрасов     | 1821
+ 11 | Николай Чернышевски  | 1828
+ 12 | Софья Ковалевская    | 1850
+(12 rows)
+
+
+iii=# \l
+                                          List of databases
+   Name    |  Owner   | Encoding |       Collate       |        Ctype        |   Access privileges
+-----------+----------+----------+---------------------+---------------------+-----------------------
+ 090801    | postgres | UTF8     | Russian_Russia.1251 | Russian_Russia.1251 |
+ 1008      | postgres | UTF8     | Russian_Russia.1251 | Russian_Russia.1251 |
+ iii       | postgres | UTF8     | Russian_Russia.1251 | Russian_Russia.1251 |
+ postgres  | postgres | UTF8     | Russian_Russia.1251 | Russian_Russia.1251 |
+ template0 | postgres | UTF8     | Russian_Russia.1251 | Russian_Russia.1251 | =c/postgres          +
+           |          |          |                     |                     | postgres=CTc/postgres
+ template1 | postgres | UTF8     | Russian_Russia.1251 | Russian_Russia.1251 | =c/postgres          +
+           |          |          |                     |                     | postgres=CTc/postgres
+(6 rows)
+
+
+iii=# \s
+history is not supported by this installation
+
+iii=# select distinct age
+iii-# from autho;
+ age
+------
+ 1828
+ 1899
+ 1892
+ 1823
+ 1795
+ 1821
+ 1930
+ 1850
+ 1812
+ 1860
+(10 rows)
+
+
+iii=# select
+iii-# * from autho
+iii-#
+iii-# ;
+ id |         name         | age
+----+----------------------+------
+  1 | Антон Чехов          | 1860
+  2 | Владимир Набоков     | 1899
+  3 | Лев Толстой          | 1828
+  4 | Насон Грядущий       | 1930
+  5 | Александр Грибоедов  | 1795
+  6 | Александр Островский | 1823
+  7 | Марина Цветаева      | 1823
+  8 | Александр Герцен     | 1892
+  9 | Федор Достоевский    | 1812
+ 10 | Николай Некрасов     | 1821
+ 11 | Николай Чернышевски  | 1828
+ 12 | Софья Ковалевская    | 1850
+(12 rows)
+
+
+iii=# select * from autho where age > 1830;
+ id |       name        | age
+----+-------------------+------
+  1 | Антон Чехов       | 1860
+  2 | Владимир Набоков  | 1899
+  4 | Насон Грядущий    | 1930
+  8 | Александр Герцен  | 1892
+ 12 | Софья Ковалевская | 1850
+(5 rows)
+
+
+iii=# select * from autho where age > 1830 ;
+ id |       name        | age
+----+-------------------+------
+  1 | Антон Чехов       | 1860
+  2 | Владимир Набоков  | 1899
+  4 | Насон Грядущий    | 1930
+  8 | Александр Герцен  | 1892
+ 12 | Софья Ковалевская | 1850
+(5 rows)
+
+
+iii=# select * from autho where age > 1830
+iii-# order by name asc;
+ id |       name        | age
+----+-------------------+------
+ 12 | Софья Ковалевская | 1850
+  2 | Владимир Набоков  | 1899
+  8 | Александр Герцен  | 1892
+  1 | Антон Чехов       | 1860
+  4 | Насон Грядущий    | 1930
+(5 rows)
+
+
+iii=# select * from autho where age > 1830
+iii-# order by name asc;\
+ id |       name        | age
+----+-------------------+------
+ 12 | Софья Ковалевская | 1850
+  2 | Владимир Набоков  | 1899
+  8 | Александр Герцен  | 1892
+  1 | Антон Чехов       | 1860
+  4 | Насон Грядущий    | 1930
+(5 rows)
+
+
+invalid command \
+Try \? for help.
+iii=# select * from autho where age < 1804
+iii-# order by desc;
+ОШИБКА:  ошибка синтаксиса (примерное положение: "desc")
+LINE 2: order by desc;
+                 ^
+iii=# select * from autho where age < 1804
+iii-# order by name desc;
+ id |        name         | age
+----+---------------------+------
+  5 | Александр Грибоедов | 1795
+(1 row)
+
+
+iii=# select * from autho where age > 1804
+iii-# order by name desc;
+ id |         name         | age
+----+----------------------+------
+  7 | Марина Цветаева      | 1823
+ 10 | Николай Некрасов     | 1821
+ 11 | Николай Чернышевски  | 1828
+  4 | Насон Грядущий       | 1930
+  1 | Антон Чехов          | 1860
+  6 | Александр Островский | 1823
+  8 | Александр Герцен     | 1892
+  3 | Лев Толстой          | 1828
+  9 | Федор Достоевский    | 1812
+  2 | Владимир Набоков     | 1899
+ 12 | Софья Ковалевская    | 1850
+(11 rows)
+
+
+iii=# select * from spouse where
+iii-# order by name, surname desc;
+ОШИБКА:  ошибка синтаксиса (примерное положение: "order")
+LINE 2: order by name, surname desc;
+        ^
+iii=# select * from spouse where
+iii-# order by name desc;
+ОШИБКА:  ошибка синтаксиса (примерное положение: "order")
+LINE 2: order by name desc;
+        ^
+iii=# select * from spouse
+iii-# order by name asc, age desc;
+ id |         name         | author_id | age
+----+----------------------+-----------+------
+ 12 | анна сниткина        |         3 | 1867
+  6 | наталья захрина      |         8 | 1838
+  5 | мария исаева         |         9 | 1857
+  1 | мария бахметьева     |         6 | 1869
+ 10 | ольга книппер        |         1 | 1901
+  4 | ольга васильевна     |        11 | 1853
+  8 | софья берс           |         3 | 1862
+  3 | сергей эфрон         |         7 | 1912
+  2 | фекла викторовна     |        10 | 1877
+  9 | нино чавчавадзе      |         5 | 1828
+ 11 | владимир ковалевский |        12 | 1868
+  7 | вера слоним          |         2 | 1925
+(12 rows)
+
+
+iii=# select * from spouse
+iii-# where age between 1859 and 1901
+iii-# order by age asc, name desc;
+ id |         name         | author_id | age
+----+----------------------+-----------+------
+  8 | софья берс           |         3 | 1862
+ 12 | анна сниткина        |         3 | 1867
+ 11 | владимир ковалевский |        12 | 1868
+  1 | мария бахметьева     |         6 | 1869
+  2 | фекла викторовна     |        10 | 1877
+ 10 | ольга книппер        |         1 | 1901
+(6 rows)
+
+
+iii=# select * from spouse
+iii-# order by name asc;
+ id |         name         | author_id | age
+----+----------------------+-----------+------
+ 12 | анна сниткина        |         3 | 1867
+  6 | наталья захрина      |         8 | 1838
+  5 | мария исаева         |         9 | 1857
+  1 | мария бахметьева     |         6 | 1869
+ 10 | ольга книппер        |         1 | 1901
+  4 | ольга васильевна     |        11 | 1853
+  8 | софья берс           |         3 | 1862
+  3 | сергей эфрон         |         7 | 1912
+  2 | фекла викторовна     |        10 | 1877
+  9 | нино чавчавадзе      |         5 | 1828
+ 11 | владимир ковалевский |        12 | 1868
+  7 | вера слоним          |         2 | 1925
+(12 rows)
+
+
+iii=# select * from autho order by age desc limit 3;
+ id |       name       | age
+----+------------------+------
+  4 | Насон Грядущий   | 1930
+  2 | Владимир Набоков | 1899
+  8 | Александр Герцен | 1892
+(3 rows)
+
+
+iii=# select * from autho order by age asc limit 3;
+ id |        name         | age
+----+---------------------+------
+  5 | Александр Грибоедов | 1795
+  9 | Федор Достоевский   | 1812
+ 10 | Николай Некрасов    | 1821
+(3 rows)
+
+
+iii=# select * from autho order by age asc limit 1;
+ id |        name         | age
+----+---------------------+------
+  5 | Александр Грибоедов | 1795
+(1 row)
+
+
+iii=# select distint name from autho;
+ОШИБКА:  ошибка синтаксиса (примерное положение: "name")
+LINE 1: select distint name from autho;
+                       ^
+iii=# select distint name from autho;
+ОШИБКА:  ошибка синтаксиса (примерное положение: "name")
+LINE 1: select distint name from autho;
+                       ^
+iii=# select distint
+iii-# name from autho;
+ОШИБКА:  ошибка синтаксиса (примерное положение: "name")
+LINE 2: name from autho;
+        ^
+iii=# select distint name
+iii-# from autho;
+ОШИБКА:  ошибка синтаксиса (примерное положение: "name")
+LINE 1: select distint name
+                       ^
+iii=# select distinct name
+iii-# from autho;
+         name
+----------------------
+ Антон Чехов
+ Насон Грядущий
+ Николай Чернышевски
+ Александр Грибоедов
+ Федор Достоевский
+ Александр Островский
+ Марина Цветаева
+ Александр Герцен
+ Софья Ковалевская
+ Лев Толстой
+ Николай Некрасов
+ Владимир Набоков
+(12 rows)
+
+
+iii=# select distint age
+iii-# from autho;
+ОШИБКА:  столбец "distint" не существует
+LINE 1: select distint age
+               ^
+iii=# select distinct age
+iii-# from autho;
+ age
+------
+ 1828
+ 1899
+ 1892
+ 1823
+ 1795
+ 1821
+ 1930
+ 1850
+ 1812
+ 1860
+(10 rows)
+
+
+iii=# ^W
+postgres=# \c iii
+You are now connected to database "iii" as user "postgres".
+iii=# select * from customers;
+ id | firstname
+----+-----------
+  1 | Tom
+  2 | Bob
+  3 | Sam
+(3 rows)
+
+
+iii=# \dt
+           List of relations
+ Schema |   Name    | Type  |  Owner
+--------+-----------+-------+----------
+ public | aa        | table | postgres
+ public | autho     | table | postgres
+ public | bok       | table | postgres
+ public | book      | table | postgres
+ public | boook     | table | postgres
+ public | customers | table | postgres
+ public | products  | table | postgres
+ public | spouse    | table | postgres
+ public | ss        | table | postgres
+ public | students  | table | postgres
+(10 rows)
+
+
+iii=# select Customers.firstname as customname, Products.productname as pname from Customers inner join Products on products.id = customers.id;
+ customname |  pname
+------------+----------
+ Tom        | iPhone X
+ Bob        | iPhone 8
+ Sam        | iPhone 7
+(3 rows)
+
+
+iii=# select * from Customers inner join Products on products.id = customers.id;
+ id | firstname | id | productname | company | productcount | price
+----+-----------+----+-------------+---------+--------------+-------
+  1 | Tom       |  1 | iPhone X    | Apple   |            2 | 66000
+  2 | Bob       |  2 | iPhone 8    | Apple   |            2 | 51000
+  3 | Sam       |  3 | iPhone 7    | Apple   |            5 | 42000
+(3 rows)
+
+
+iii=# select * from Customers left join Products on products.id = customers.id;
+ id | firstname | id | productname | company | productcount | price
+----+-----------+----+-------------+---------+--------------+-------
+  1 | Tom       |  1 | iPhone X    | Apple   |            2 | 66000
+  2 | Bob       |  2 | iPhone 8    | Apple   |            2 | 51000
+  3 | Sam       |  3 | iPhone 7    | Apple   |            5 | 42000
+(3 rows)
+
+
+iii=# select * from Customers right join Products on products.id = customers.id;
+ id | firstname | id |  productname   |  company   | productcount | price
+----+-----------+----+----------------+------------+--------------+-------
+  1 | Tom       |  1 | iPhone X       | Apple      |            2 | 66000
+  2 | Bob       |  2 | iPhone 8       | Apple      |            2 | 51000
+  3 | Sam       |  3 | iPhone 7       | Apple      |            5 | 42000
+    |           |  5 | Galaxy S8 Plus | Samsung    |            1 | 46000
+    |           |  6 | Nokia 9        | HDM Global |            2 | 26000
+    |           |  4 | Galaxy S9      | Samsung    |            2 | 56000
+    |           |  7 | Desire 12      | HTC        |            6 | 38000
+(7 rows)
+
+
+iii=# select * from Customers full join Products on products.id = customers.id;
+ id | firstname | id |  productname   |  company   | productcount | price
+----+-----------+----+----------------+------------+--------------+-------
+  1 | Tom       |  1 | iPhone X       | Apple      |            2 | 66000
+  2 | Bob       |  2 | iPhone 8       | Apple      |            2 | 51000
+  3 | Sam       |  3 | iPhone 7       | Apple      |            5 | 42000
+    |           |  5 | Galaxy S8 Plus | Samsung    |            1 | 46000
+    |           |  6 | Nokia 9        | HDM Global |            2 | 26000
+    |           |  4 | Galaxy S9      | Samsung    |            2 | 56000
+    |           |  7 | Desire 12      | HTC        |            6 | 38000
+(7 rows)
+
+
+iii=# select Customers.id as customid, Costomers.firstname from Customers full join Products on products.id = customers.id;
+ОШИБКА:  таблица "costomers" отсутствует в предложении FROM
+LINE 1: select Customers.id as customid, Costomers.firstname from Cu...
+                                         ^
+iii=# select Customers.id as customid, Customers.firstname from Customers full join Products on products.id = customers.id;
+ customid | firstname
+----------+-----------
+        1 | Tom
+        2 | Bob
+        3 | Sam
+          |
+          |
+          |
+          |
+(7 rows)
+
+
+iii=# select Customers.id as customid, Customers.firstname, Products.id, Products.productname, Products.company, Products.productcount, Products.price from Customers full join Products on products.id = customers.id;
+ customid | firstname | id |  productname   |  company   | productcount | price
+----------+-----------+----+----------------+------------+--------------+-------
+        1 | Tom       |  1 | iPhone X       | Apple      |            2 | 66000
+        2 | Bob       |  2 | iPhone 8       | Apple      |            2 | 51000
+        3 | Sam       |  3 | iPhone 7       | Apple      |            5 | 42000
+          |           |  5 | Galaxy S8 Plus | Samsung    |            1 | 46000
+          |           |  6 | Nokia 9        | HDM Global |            2 | 26000
+          |           |  4 | Galaxy S9      | Samsung    |            2 | 56000
+          |           |  7 | Desire 12      | HTC        |            6 | 38000
+(7 rows)
+
+
+iii=# select Customers.id as customid, Customers.firstname, Products.id, Products.productname, Products.company, Products.productcount, Products.price from Customers join Products on products.id = customers.id;
+ customid | firstname | id | productname | company | productcount | price
+----------+-----------+----+-------------+---------+--------------+-------
+        1 | Tom       |  1 | iPhone X    | Apple   |            2 | 66000
+        2 | Bob       |  2 | iPhone 8    | Apple   |            2 | 51000
+        3 | Sam       |  3 | iPhone 7    | Apple   |            5 | 42000
+(3 rows)
+
+
+iii=#
+

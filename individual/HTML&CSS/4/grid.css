@@ -1,0 +1,33 @@
+* {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'uluk uluk uluk'
+        'sidebar content content'
+        'footer footer footer';
+    grid-template-rows: 80px 400px 100px;
+    grid-gap: 10px;
+}
+
+.header {
+    grid-area: uluk;
+    border: 1px solid black;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    border: 1px solid black;
+}
+
+.content {
+    grid-area: content;
+    border: 1px solid black;
+}
+
+.footer {
+    grid-area: footer;
+    border: 1px solid black;
+}

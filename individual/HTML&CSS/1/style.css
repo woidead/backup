@@ -1,0 +1,25 @@
+.blue_h1{
+    color: blue;
+}
+h1{
+    color: blueviolet;
+}
+ul{
+    list-style: none;
+}
+
+
+body{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.back{
+    width: 600px;
+    height: 600px;
+    background-image: url(https://4kwallpapers.com/images/wallpapers/shorncliffe-pier-australia-fishing-pier-brisbane-sunrise-2560x1440-4381.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+background-size: cover;
+object-fit: cover;
+}

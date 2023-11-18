@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>woideadweather</title>
+    <script src="eel.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>hello</h1>
+    </div>
+    <input id = 'location' type="text" placeholder="название страны и города" required="">
+    <div class="info">
+        
+    </div>
+    
+    async function display_weather(){
+        Let place = document.getElementById('location').value;
+        Let res = await eel.get_weather(place)();
+        document.getElementById('info').innerHTML = res;
+    }
+</body>
+</html>
